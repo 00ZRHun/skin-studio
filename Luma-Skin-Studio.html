@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Luma Skin Studio | Personalized Facial &amp; Skincare Treatments</title>
+<meta name="description" content="Discover personalized facial treatments at Luma Skin Studio. Explore skincare options, learn what to expect, and get in touch to find a facial that suits your needs.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#faf5ec;--bg2:#f0e6d6;--ink:#3b2a20;--mut:#6f5c4f;--sage:#8a9a7f;--rose:#c99a92;--card:#fff;--line:#e3d6c3;--r:18px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1f1814;--bg2:#2a211b;--ink:#f3e9dc;--mut:#c4b3a3;--card:#2f2620;--line:#443730}}
+:root[data-theme=dark]{--bg:#1f1814;--bg2:#2a211b;--ink:#f3e9dc;--mut:#c4b3a3;--card:#2f2620;--line:#443730}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.08;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(2.7rem,7vw,5rem)}h2{font-size:clamp(2.1rem,4.6vw,3.3rem)}h3{font-size:1.55rem}
+p{margin:0 0 1em;color:var(--mut)}a{color:inherit}
+.w{max-width:1120px;margin:auto;padding:0 20px}
+section{padding:80px 0}.alt{background:var(--bg2)}
+.eb{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:14px;display:block}
+.btn{display:inline-block;padding:14px 26px;border-radius:99px;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:500;font-size:.95rem;border:1px solid var(--ink);transition:transform .2s,box-shadow .2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(59,42,32,.18)}.btn:active{transform:scale(.97)}
+.btn.o{background:transparent;color:var(--ink)}
+:focus-visible{outline:3px solid var(--sage);outline-offset:3px}
+.ann{background:var(--ink);color:var(--bg);text-align:center;font-size:.85rem;padding:9px 16px}.ann a{text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.35rem;letter-spacing:.2em;text-decoration:none;font-weight:600}
+nav{display:flex;gap:26px;align-items:center}nav a{text-decoration:none;font-size:.92rem;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .25s}nav a:hover{background-size:100% 1px}nav .btn{padding:10px 20px;color:var(--bg);background-image:none}
+#mb{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:99px;padding:8px 16px;font:inherit;cursor:pointer}
+.hero{padding:56px 0 72px}.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 18px}.sm{font-size:.85rem;color:var(--mut)}
+.ph{position:relative;border-radius:var(--r);background:linear-gradient(160deg,var(--a,#e9d5c0),var(--b,#c9a98e));min-height:240px;overflow:hidden;color:#3b2a20;display:flex;align-items:flex-end;padding:14px}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}.card:hover .ph img{transform:scale(1.04)}.ph::before{content:"";position:absolute;z-index:1;pointer-events:none;width:70%;aspect-ratio:1;border-radius:50%;right:-15%;top:-20%;background:radial-gradient(#fff9,#fff0 70%)}
+.ph small{position:relative;z-index:2;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;background:#fffc;padding:4px 10px;border-radius:99px}
+.arch{min-height:520px;border-radius:300px 300px var(--r) var(--r);--a:#efdccb;--b:#b98f7a}
+.trust{padding:22px 0;border-block:1px solid var(--line)}.trust .w{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.88rem;color:var(--mut)}.trust span::before{content:"✦ ";color:var(--rose)}
+.g{display:grid;gap:22px}.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--card);border-radius:var(--r);border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(59,42,32,.1)}
+.card .ph{height:190px;min-height:190px;flex:0 0 190px;border-radius:0}.g4>.card{height:100%}.card .ph img{object-position:center}.card>div{padding:20px;display:flex;flex-direction:column;flex:1}.card p{font-size:.93rem}
+.lk{margin-top:0;font-weight:600;font-size:.9rem;text-decoration:none;color:var(--ink);border-bottom:1px solid var(--rose);align-self:flex-start}
+.meta{display:flex;justify-content:space-between;font-size:.85rem;border-block:1px solid var(--line);padding:8px 0;margin-top:auto;margin-bottom:14px;color:var(--ink)}
+.head{max-width:640px;margin-bottom:40px}.c{text-align:center;margin-inline:auto}
+.n{font-family:"Cormorant Garamond",serif;font-size:2.6rem;color:var(--rose);line-height:1}
+.steps{counter-reset:s}.steps li{list-style:none}.steps{padding:0;margin:0}
+.pull{text-align:center;max-width:680px;margin:auto}.pull h2{font-style:italic}
+details{border-bottom:1px solid var(--line);padding:18px 0}summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";font-size:1.4rem;line-height:1;transition:transform .25s}details[open] summary::after{transform:rotate(45deg)}details p{margin:12px 0 0}
+.fin{text-align:center;background:linear-gradient(160deg,#ead7c3,#c9a98e);color:#3b2a20}.fin p{color:#5a463a}.fin .btn{background:#3b2a20;color:#faf5ec}.fin .btn.o{background:transparent;color:#3b2a20}.fin .cta{justify-content:center}
+footer{padding:56px 0 100px;font-size:.9rem}footer .w{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}footer a{display:block;text-decoration:none;color:var(--mut);padding:3px 0}
+#bar{display:none}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(max-width:900px){.card .ph{height:210px;min-height:210px;flex-basis:210px}.hero .w,.g2,footer .w{grid-template-columns:1fr}.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:1fr}.arch{min-height:340px;order:-1}.hero{padding-top:28px}}
+@media(max-width:760px){#mb{display:block}nav{display:none;position:absolute;top:68px;left:0;right:0;background:var(--bg);flex-direction:column;align-items:stretch;padding:16px 20px 22px;border-bottom:1px solid var(--line)}nav.open{display:flex}nav a{padding:8px 0}
+#bar{display:block;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:30;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}section{padding:56px 0}}
+@media(max-width:520px){.card .ph{height:220px;min-height:220px;flex-basis:220px}.g4{grid-template-columns:1fr}.btn{width:100%;text-align:center}nav .btn{width:auto}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<!-- DEMO CONTENT: business address, phone number, prices, hours and email are illustrative sample data. Replace and verify before publishing. No fabricated reviews are used. -->
+<body>
+<div class="ann"><a href="#intro">New to Luma? Discover your first facial experience.</a></div>
+<header><div class="w">
+<a class="logo" href="#top">LUMA SKIN STUDIO</a>
+<button id="mb" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main"><a href="#top">Home</a><a href="#treatments">Our Treatments</a><a href="#journey">Your Skin Journey</a><a href="#about">About Us</a><a href="#faq">FAQs</a><a class="btn" data-wa data-msg="Hi! I'd like to book a facial at Luma.">Book Your Facial</a></nav>
+</div></header>
+<main id="top">
+<section class="hero"><div class="w">
+<div>
+<span class="eb">A more personal approach to skincare</span>
+<h1>Your skin. Your rhythm. Your kind of glow.</h1>
+<p>Beautiful skin care starts with understanding what your skin needs. Discover thoughtful facial treatments, personalized attention, and a little time just for you.</p>
+<div class="cta"><a class="btn" href="#concerns">Find Your Facial</a><a class="btn o" data-wa data-msg="Hi! I'd like to book a visit to Luma.">Book Your Visit</a></div>
+<p class="sm">Thoughtful care. Personalized treatments. No guesswork.</p>
+</div>
+<div class="ph arch"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1100&q=85" alt="Relaxing professional facial treatment in a calm skincare studio" fetchpriority="high"><small>A moment just for you</small></div>
+</div></section>
+
+<div class="trust"><div class="w"><span>Personalized Care</span><span>Treatments Matched to Your Needs</span><span>Clear, Thoughtful Guidance</span><span>Your Comfort Comes First</span></div></div>
+
+<section id="concerns"><div class="w">
+<div class="head"><span class="eb">Every skin has its own story</span><h2>Let’s start with what your skin needs.</h2>
+<p>Skin changes with the seasons, your routine, and everyday life. You don’t need to know every skincare ingredient or treatment name before you begin. Tell us what you’re looking for, and let’s explore a suitable place to start.</p></div>
+<div class="g g4">
+<article class="card rv"><div class="ph"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=80" alt="Hydration and facial skincare treatment" loading="lazy"></div><div><h3>Hydration &amp; Comfort</h3><p><b>For skin that needs a little extra care.</b> Explore facial options designed to support hydration and leave skin feeling refreshed and comfortable.</p><a class="lk" href="#t-hydration">Explore Hydration</a></div></article>
+<article class="card rv"><div class="ph"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80" alt="Skincare products arranged for a fresh beauty ritual" loading="lazy"></div><div><h3>Brightness &amp; Freshness</h3><p><b>A fresh start for dull-looking skin.</b> Gentle exfoliation, radiance, and a refreshed-looking complexion, where suitable.</p><a class="lk" href="#t-refresh">Explore Brightening</a></div></article>
+<article class="card rv"><div class="ph"><img src="https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=700&q=80" alt="Professional skincare and facial cleansing" loading="lazy"></div><div><h3>Deep Cleansing &amp; Pore Care</h3><p><b>A clearer-feeling skincare routine starts here.</b> Cleansing-focused treatments for congested-looking skin, tailored to your needs.</p><a class="lk" href="#t-clarify">Explore Pore Care</a></div></article>
+<article class="card rv"><div class="ph"><img src="https://images.unsplash.com/photo-1573461160327-b450ce3d8e7f?auto=format&fit=crop&w=700&q=80" alt="Calm spa and skincare self-care moment" loading="lazy"></div><div><h3>Everyday Skin Maintenance</h3><p><b>Make time for your skin, regularly.</b> Ongoing facial care and personalized routines that fit your lifestyle.</p><a class="lk" href="#t-personal">Explore Skin Care</a></div></article>
+</div>
+<p class="c" style="margin-top:36px">Not sure where to start? That’s completely okay.<br><a class="btn" style="margin-top:14px" data-wa data-msg="Hi! I'd like to learn more about your facial treatments. Could you help me find a suitable option?">Let Us Help You Choose</a></p>
+</div></section>
+
+<section id="treatments" class="alt"><div class="w">
+<div class="head"><span class="eb">Your time, your treatment</span><h2>Find your moment of care.</h2>
+<p>Explore our signature facial experiences, thoughtfully designed around hydration, freshness, and everyday skin comfort.</p></div>
+<div class="g g4">
+<article class="card rv" id="t-refresh"><div class="ph"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=700&q=80" alt="Facial treatment for refreshed-looking skin" loading="lazy"></div><div><h3>The Everyday Refresh</h3><p>A thoughtful facial experience for skin that needs a fresh, comfortable reset.</p><div class="meta"><span>45 minutes</span><span>RM 128</span></div><a class="lk" data-wa data-msg="Hi! I'd like to know more about The Everyday Refresh facial.">Discover This Facial</a></div></article>
+<article class="card rv" id="t-hydration"><div class="ph"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=700&q=80" alt="Hydrating skincare products" loading="lazy"></div><div><h3>The Hydration Ritual</h3><p>A comforting experience focused on hydration and a softer, more refreshed-looking complexion.</p><div class="meta"><span>60 minutes</span><span>RM 168</span></div><a class="lk" data-wa data-msg="Hi! I'd like to know more about The Hydration Ritual facial.">Discover This Facial</a></div></article>
+<article class="card rv" id="t-clarify"><div class="ph"><img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=700&q=80" alt="Professional facial cleansing treatment" loading="lazy"></div><div><h3>The Clarifying Session</h3><p>A cleansing-focused treatment for those seeking a more considered approach to congested-looking skin.</p><div class="meta"><span>60 minutes</span><span>RM 158</span></div><a class="lk" data-wa data-msg="Hi! I'd like to know more about The Clarifying Session facial.">Discover This Facial</a></div></article>
+<article class="card rv" id="t-personal"><div class="ph"><img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=700&q=80" alt="Personalized skincare routine and products" loading="lazy"></div><div><h3>The Personalized Facial</h3><p>Not sure what your skin needs? Begin with a conversation about your concerns, preferences, and routine.</p><div class="meta"><span>60–75 minutes</span><span>From RM 188</span></div><a class="lk" data-wa data-msg="Hi! I'd like to ask about a personalized facial.">Ask About Your Facial</a></div></article>
+</div></div></section>
+
+<section id="about"><div class="w g g2" style="align-items:center;gap:56px">
+<div class="ph rv" style="min-height:420px"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=85" alt="Warm, peaceful spa interior with a relaxing atmosphere" loading="lazy"></div>
+<div><span class="eb">More than a moment</span><h2>Skincare should feel personal.</h2>
+<p>You deserve more than a one-size-fits-all approach. We believe a good skincare experience starts with listening, understanding your needs, and helping you feel comfortable with every step.</p>
+<p><span class="n">01</span><br><b style="color:var(--ink)">Listen Before We Recommend.</b> Your concerns, preferences, and current routine matter. We begin by understanding what you’re looking for.</p>
+<p><span class="n">02</span><br><b style="color:var(--ink)">Thoughtful Care, Step by Step.</b> Know what to expect before your treatment begins. We explain the experience and answer your questions.</p>
+<p><span class="n">03</span><br><b style="color:var(--ink)">Guidance Without the Pressure.</b> Our aim is to help you understand your options and make choices that feel right for you.</p></div>
+</div></section>
+
+<section id="journey" class="alt"><div class="w">
+<div class="head"><span class="eb">Simple, from the start</span><h2>Good care begins with a conversation.</h2></div>
+<ol class="steps g g4">
+<li class="rv"><span class="n">1</span><h3>Tell Us About Your Skin</h3><p>Share your concerns, preferences, and what you’d like to focus on.</p></li>
+<li class="rv"><span class="n">2</span><h3>Explore Your Options</h3><p>We’ll help you understand the available treatments and discuss which may be suitable for you.</p></li>
+<li class="rv"><span class="n">3</span><h3>Enjoy Your Appointment</h3><p>Arrive, settle in, and let your practitioner guide you through the agreed treatment.</p></li>
+<li class="rv"><span class="n">4</span><h3>Know What Comes Next</h3><p>Leave with clear aftercare guidance appropriate to your treatment and practical suggestions for your routine.</p></li>
+</ol>
+<p style="margin-top:24px"><a class="btn" data-wa data-msg="Hi! I'd like help finding a starting point for my skincare.">Let’s Find Your Starting Point</a></p>
+</div></section>
+
+<section><div class="w g g2" style="align-items:center;gap:56px">
+<div class="pull rv" style="grid-column:1/-1"><span class="eb">The little details matter</span><h2>A calmer kind of skincare experience.</h2>
+<p>From a thoughtful consultation to clear aftercare guidance, every step is designed to help you feel comfortable and informed.</p></div>
+<div class="g g3" style="grid-column:1/-1">
+<article class="card rv"><div><span class="eb">The welcome</span><h3>Space to ask questions</h3><p>We take time to understand your routine, preferences, and what you hope to get from your visit.</p></div></article>
+<article class="card rv"><div><span class="eb">The treatment</span><h3>Care at your pace</h3><p>Your treatment plan is discussed with you first, so you know what to expect before we begin.</p></div></article>
+<article class="card rv"><div><span class="eb">The aftercare</span><h3>Simple next steps</h3><p>Leave with practical guidance and a clearer idea of how to care for your skin between visits.</p></div></article>
+</div>
+</div></section>
+
+<section id="intro" class="alt"><div class="w pull rv"><span class="eb">New to Luma?</span><h2>Your first step towards more personal skincare.</h2>
+<p>Not sure which treatment to choose? Start with a conversation about your skin, explore your options, and discover an experience that feels right for you.</p>
+<a class="btn" data-wa data-msg="Hi! I'm new to Luma and would like to ask about a first visit.">Ask Us About Your First Visit</a>
+<p class="sm" style="margin-top:14px">No need to know all the answers before you begin.</p></div></section>
+
+<section><div class="w g g2" style="align-items:center;gap:56px">
+<div><span class="eb">The people behind your care</span><h2>Good skincare starts with good people.</h2>
+<p>Our studio team takes a thoughtful, no-pressure approach to skincare. We listen first, explain your options clearly, and help you feel at ease throughout your visit.</p><p><b style="color:var(--ink)">Your visit, guided with care</b><br>Every appointment begins with a conversation about your skin goals, sensitivities, and preferences.</p>
+<a class="btn o" href="#visit">Get to Know Us</a></div>
+<div class="ph rv" style="min-height:300px"><img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=85" alt="Serene wellness studio prepared for a skincare appointment" loading="lazy"></div>
+</div></section>
+
+<section id="faq" class="alt"><div class="w" style="max-width:780px">
+<div class="head"><span class="eb">A few things you may be wondering</span><h2>Before your first visit.</h2></div>
+<details><summary>Which facial is right for my skin?</summary><p>Every person’s skin and preferences are different. Tell us about your main concerns and current routine, and we’ll help you explore suitable options based on the treatments we offer.</p></details>
+<details><summary>Do I need to know my skin type before booking?</summary><p>Not necessarily. Start by telling us what you’ve noticed about your skin and what you’d like help with. We’ll guide you through the next step.</p></details>
+<details><summary>What should I expect during my first visit?</summary><p>We’ll explain the available treatment, discuss your preferences, and answer your questions before proceeding. Your exact experience depends on the treatment you choose.</p></details>
+<details><summary>How much does a facial cost?</summary><p>Prices are listed alongside the available services where confirmed. If you’re unsure which option suits you, contact us for help understanding the choices.</p></details>
+<details><summary>How long does a facial appointment take?</summary><p>It depends on the treatment. Check the treatment details or contact our team to confirm the duration before booking.</p></details>
+<details><summary>Can I book through WhatsApp?</summary><p>Yes. Use our WhatsApp enquiry link to ask about treatments, availability, and booking arrangements. Our team will confirm the details with you.</p></details>
+<details><summary>Is every facial suitable for every skin type?</summary><p>Not necessarily. Suitability depends on the treatment and individual circumstances. Tell us about sensitivities, allergies, skin concerns, or current products before proceeding.</p></details>
+<details><summary>What if I’m pregnant or have a skin condition?</summary><p>Some treatments or ingredients may not be appropriate in certain circumstances. Please tell us before your appointment and seek advice from a qualified healthcare professional when needed.</p></details>
+<details><summary>Do I need to follow an aftercare routine?</summary><p>Aftercare depends on the treatment. Your practitioner should explain any relevant guidance and when to resume your usual skincare routine.</p></details>
+<p class="c" style="margin-top:32px">Still have a question?<br><a class="btn" style="margin-top:12px" data-wa data-msg="Hi! I have a question about your facials.">Chat With Us</a></p>
+</div></section>
+
+<section id="visit"><div class="w g g2" style="gap:56px">
+<div><span class="eb">We look forward to meeting you</span><h2>Your next moment of care starts here.</h2>
+<p>Find our studio, explore the available appointment times, and get in touch if you’d like help choosing a treatment.</p>
+<p><b style="color:var(--ink)">Address:</b> Suite 2-08, Seri Molek Wellness Centre, Taman Molek, Johor Bahru<br><b style="color:var(--ink)">Hours:</b> Tue–Sun, 10:00 AM–7:00 PM<br><b style="color:var(--ink)">WhatsApp:</b> <span id="wan">+60 12-345 6789</span></p>
+<div class="cta"><a class="btn o" id="dir" href="#visit">Get Directions</a><a class="btn" data-wa data-msg="Hi! I'd like to book a visit.">Book Your Visit</a></div></div>
+<div class="ph" style="min-height:280px"><img src="https://images.unsplash.com/photo-1564540583246-934409427776?auto=format&fit=crop&w=900&q=85" alt="Elegant spa interior with natural textures and soft light" loading="lazy"></div>
+</div></section>
+
+<section class="fin"><div class="w"><h2>A little more care. A little more you.</h2>
+<p style="max-width:560px;margin-inline:auto">Take a moment for yourself. Start with your skin concerns, explore the options, and let us help you find a facial experience that feels right.</p>
+<div class="cta"><a class="btn" data-wa data-msg="Hi! I'd like to book a facial.">Book Your Facial</a><a class="btn o" data-wa data-msg="Hi! I'm not sure where to start. Could you help?">Not Sure Where to Start? Chat With Us</a></div>
+<p class="sm">Thoughtful guidance. Clear options. Care at your own pace.</p></div></section>
+</main>
+
+<footer><div class="w">
+<div><a class="logo" href="#top" style="color:var(--ink);padding:0">LUMA SKIN STUDIO</a><p style="margin-top:10px">Personal skincare, thoughtful treatments, and a little time just for you.</p><a class="btn" data-wa data-msg="Hi! I'd like to chat about my skin." style="display:inline-block;color:var(--bg)">Let’s Talk Skin</a></div>
+<div><a href="#treatments">Our Treatments</a><a href="#about">About Us</a><a href="#faq">FAQs</a><a href="#visit">Contact</a></div>
+<div><a href="mailto:hello@lumaskinstudio.example">hello@lumaskinstudio.example</a><a href="#visit">Instagram</a><a href="#visit">Facebook</a><a href="#faq">Privacy &amp; Booking Information</a><p class="sm" style="margin-top:12px">© <span id="yr"></span> Luma Skin Studio. All rights reserved.</p></div>
+</div></footer>
+<a id="bar" class="btn" data-wa data-msg="Hi! I'd like to book a facial.">Book Your Facial</a>
+
+<script>
+// ===== EDIT ME: confirmed business details =====
+var CFG={wa:"60123456789",map:"https://www.google.com/maps/search/?api=1&query=Taman+Molek+Johor+Bahru"}; // DEMO DETAILS: replace with verified business contact and address before launch.
+try{
+var base=CFG.wa?"https://wa.me/"+CFG.wa+"?text=":"";
+document.querySelectorAll("[data-wa]").forEach(function(a){a.href=base?base+encodeURIComponent(a.dataset.msg||""):"#visit";if(base)a.target="_blank",a.rel="noopener"});
+if(CFG.wa)document.getElementById("wan").textContent="+60 12-345 6789";
+if(CFG.map){var d=document.getElementById("dir");d.href=CFG.map;d.target="_blank";d.rel="noopener"}
+document.getElementById("yr").textContent=new Date().getFullYear();
+}catch(e){}
+var mb=document.getElementById("mb"),nv=document.getElementById("nav");
+mb.onclick=function(){var o=nv.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
+nv.onclick=function(e){if(e.target.tagName=="A"){nv.classList.remove("open");mb.setAttribute("aria-expanded",false)}};
+var r=document.querySelectorAll(".rv");
+if("IntersectionObserver"in window&&!matchMedia("(prefers-reduced-motion:reduce)").matches){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+r.forEach(function(x){io.observe(x)})}else r.forEach(function(x){x.classList.add("in")});
+</script>
+</body>
+</html>
